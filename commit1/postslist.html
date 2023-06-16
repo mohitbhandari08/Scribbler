@@ -10,6 +10,17 @@
 </head>
 
 <body>
+    <header>
+        <div class="container">
+            <nav>
+                <img src="images/Scribbler.jpg" class="logo">
+                <ul>
+                    <li><button class="btn1" id="signup-btn">Signup</button></li>
+                    <li><button class="btn1" id="signin-btn">Signin</button></li>
+                </ul>
+            </nav>
+        </div>
+</header>
 
     <!-- list of all posts starts here -->
     <div class="post-list">
@@ -145,6 +156,34 @@
         </div>
     </div>
     <!-- list of all posts ends here -->
+     <!-- Signup Modal -->
+     <div id="signup-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Get Started</h2>
+            <form id="signup-form">
+                <input type="text" placeholder="Enter your name" required>
+                <input type="text" placeholder="Enter your username" required>
+                <input type="password" placeholder="Enter your password" required>
+                <input type="password" placeholder="Re-enter your password" required>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Signin Modal -->
+    <div id="signin-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Welcome Back!</h2>
+            <form id="signin-form">
+                <input type="text" placeholder="Enter your username" required>
+                <input type="password" placeholder="Enter your password" required>
+                <button type="submit">Sign In</button>
+            </form>
+            <p>Not a member? <a href="#" id="signup-link">Sign Up</a></p>
+        </div>
+    </div>
 
     <script src="scripts/postlist.js"></script>
 </body>
