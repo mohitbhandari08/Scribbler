@@ -11,7 +11,8 @@
   <header>
     <div class="container">
       <nav>
-        <img src="images/Scribbler.jpg" class="logo">
+        <a  class="logo-title">ScriBBler</a>
+        <p class="middleText">Explore, Imagine, Create</p>
         <ul>
           <li><button class="btn1" id="signup-btn">Signup</button></li>
           <li><button class="btn1" id="signin-btn">Signin</button></li>
@@ -21,22 +22,34 @@
   </header>
 
   <!-- Post Details -->
-  <div class="post-wrapper">
-    <div class="post-details">
-      <h1 class="post-title">Post Title</h1>
-      <h3 class="post-author">Author Name</h3>
-      <button class="edit-btn"><i class="fa fa-edit"></i> Edit</button>
-      <button class="save-btn"><i class="fa fa-save"></i> Save</button>
-      <p class="post-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </div>
-    <button class="like-btn"><i class="fa fa-thumbs-up"></i> Like</button>
-    <p class="like-statement">Be the first one to like this!</p>
-    <input class="comment-input" type="text" placeholder="Leave a comment...">
-    <button class="comment-btn">Comment</button>
-    <div class="comments-section">
-      <div class="comment">Sample Comment</div>
-    </div>
-  </div>
+  <div class="blogContent">
+    <div id="blogTitle" class="blogTite">
+        <p id="blogTitleNew" style="margin: 20px;">Title</p>
+        <center><input type="text" id="titleArea" ></input></center>
+   </div>
+   <div class="Author">
+       <p style="margin: 20px;">ABC</p>      
+       <a href=# id="edit" onclick="changeText()"> <div id="text" style="position: relative;left: 10px;"> Edit</div><div id="text2"><i class="fas fa-edit"></i></div></a>   
+     
+ </div>
+ <div class="desc">
+     <p id="desc1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et earum possimus voluptatem molestias consequatur esse in saepe, architecto voluptas repellat dolor, sint perspiciatis commodi at. Enim aspernatur explicabo nihil, iste quidem rem cumque doloremque voluptates numquam doloribus hic, natus maiores sit dolor. Sit officia similique debitis enim odio corrupti magnam aut. Suscipit minus obcaecati iste delectus ex ipsam incidunt porro vitae vel, natus, velit voluptate doloremque magnam deleniti repellendus voluptates pariatur a deserunt! Assumenda aspernatur beatae rerum ex nam dolorem repudiandae magnam labore voluptas tenetur maxime repellat ut, sapiente reprehenderit saepe dolores harum corrupti laboriosam debitis! Suscipit quia culpa sapiente deserunt! Veniam aliquid consequatur adipisci fugit id iusto in enim dolores! Dolore molestias corrupti tenetur autem sit fugit aliquam dolorem quod repudiandae? Deleniti corporis voluptatibus est voluptates, velit eos! Omnis dolore molestias voluptatem facilis distinctio quibusdam nihil tempora excepturi! Facere eum maiores illo commodi nostrum harum at doloremque voluptas temporibus repellat fugiat eius, accusantium sequi velit deleniti minus odio cupiditate sed! Nesciunt nihil error distinctio veritatis cupiditate quos blanditiis. Perferendis fugit ducimus dolorum alias delectus libero molestias harum expedita sapiente id repellat beatae, minima nihil magnam sit maxime. Obcaecati officia perferendis amet id iure ipsum recusandae itaque nesciunt nemo similique nam ratione eaque a fugiat sit eum, ad labore facere numquam, omnis esse distinctio sint. Impedit dicta, est dolor minima ullam eveniet nesciunt ipsa odio incidunt, illo vero cumque pariatur, nostrum illum earum magnam consequatur accusamus ut aut adipisci quia quis nulla asperiores. Incidunt cumque laudantium labore delectus nam asperiores.
+     </p>
+     <textarea id="textarea" style="display: none "></textarea>
+ </div>
+ 
+ <a href="#" onclick="liker1()" id="edit" style="width: 90px;margin-left: 3px;margin-top: 20px;" class="liker"><div id="text"> <i class="fas fa-thumbs-up"></i> </div>     <div id="text22" class="likeText" style="position: relative;left: -9px;">Like</div></a>
+     <p id="like6" style="margin-left: 3px;margin-top: 20px;">Be the first one to like this!</p>
+     <div id="commentBox" style="display: none">
+         <textarea id="cmntText" placeholder="Leave a comment..." style="height: 85px; width: 40%"></textarea><br>
+         <button onclick="cmnt()">Comment</button>
+         <B><p>All Comments</p></B>
+               <div id="commentArea" style="width: 45%; background-color: darkgray; height: auto; padding: 10px ;display: none">
+                 
+               </div>	
+     </div>
+     <p id="temp" style="display: none;"><i class="fa fa-floppy-o"></i></p>
+     <p id="temp2" style="display: none;"><i class="fas fa-edit"></i></p>
 
   <!-- Signup Modal -->
   <div id="signup-modal" class="modal">
@@ -63,7 +76,7 @@
         <input type="password" placeholder="Enter your password" required>
         <button type="submit">Sign In</button>
       </form>
-      <p>Not a member? <a href="#" id="signup-link">Sign Up</a></p>
+      <p style="margin-top: 20px;">Not a member? <a href="#" id="signup-link">Sign Up</a></p>
     </div>
   </div>
 </body>

@@ -8,13 +8,12 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="shortcut icon" href="images/icons8-s-key-50.png" type="image/x-icon">
     <style>
-        body{
-            height: 100vh;
-            width: 100vw;
-            background-image: url("images/123.jpg");
-            background-size: 100% 100%;
-            background-repeat: no-repeat;
-        }
+    body {
+        background: url('images/123.jpg') no-repeat center center fixed; 
+         background-size: cover;
+          height: 100%;
+           overflow: hidden;
+       }
     
     </style>
 </head>
@@ -22,7 +21,8 @@
     <header>
         <div class="container">
             <nav>
-                <img src="images/Scribbler.jpg" class="logo">
+                <a  class="logo-title">ScriBBler</a>
+                <p class="middleText">Explore, Imagine, Create</p>
                 <ul>
                     <li><button class="btn1" id="signup-btn">Signup</button></li>
                     <li><button class="btn1" id="signin-btn">Signin</button></li>
@@ -62,7 +62,7 @@
                 <input type="password" placeholder="Enter your password" required>
                 <button type="submit">Sign In</button>
             </form>
-            <p>Not a member? <a href="#" id="signup-link">Sign Up</a></p>
+            <p style="margin-top: 20px;">Not a member? <a href="#" id="signup-link">Sign Up</a>
         </div>
     </div>
 

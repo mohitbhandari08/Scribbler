@@ -4,6 +4,22 @@ body {
     margin: 0;
     padding: 0;
   }
+  .logo-title{
+    font-family: 'Satisfy', cursive;
+    font-size: 35px;
+    color: #112fb4;
+    text-decoration: none;
+    margin-left: 10px;
+    position: relative;
+    top: -17px;
+  }
+  .middleText{
+    color: black;
+    font-family: 'Marck Script', cursive;
+    position: relative;
+    bottom: -21px;
+    left: -519px;
+  }
   
   header {
     background-color:  #ffeedd;
@@ -168,7 +184,8 @@ body {
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 400px;
+    width: 800px;
+height: 400px;
   }
   
   .modal-content h2 {
@@ -185,7 +202,7 @@ body {
   .modal-content input,
   .modal-content textarea {
     display: block;
-    width: 100%;
+    width: 90%;
     margin-bottom: 10px;
     padding: 10px;
     border-radius: 4px;

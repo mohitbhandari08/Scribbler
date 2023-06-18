@@ -1,10 +1,22 @@
 * {
     margin: 0;
     padding: 0;
-  }
-  body{
-    background-color: #000;
-  }
+}
+.logo-title{
+  font-family: 'Satisfy', cursive;
+  font-size: 35px;
+  color: #112fb4;
+  text-decoration: none;
+  margin-left: 10px;
+
+}
+.middleText{
+  color: black;
+  font-family: 'Marck Script', cursive;
+  position: relative;
+  bottom: -33px;
+  left: -536px;
+}
   
   .container img {
     height: 80px;
@@ -42,6 +54,8 @@
     color: white;
     font-size: 14px;
     cursor: pointer;
+    position: relative;
+top: 9px;
   }
   
   .post {
@@ -93,7 +107,8 @@
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 400px;
+    width: 800px;
+    height: 400px;
   }
   
   .modal-content h2 {
@@ -110,7 +125,7 @@
   .modal-content input,
   .modal-content textarea {
     display: block;
-    width: 100%;
+    width: 90%;
     margin-bottom: 10px;
     padding: 10px;
     border-radius: 4px;

@@ -6,103 +6,31 @@ body {
   background-color: white;
   font-family: 'Roboto', sans-serif;
 }
+.logo-title{
+  font-family: 'Satisfy', cursive;
+  font-size: 35px;
+  color: #112fb4;
+  text-decoration: none;
+  margin-left: 10px;
+  position: relative;
+top: -9px;
+
+}
+.middleText{
+  color: black;
+  font-family: 'Marck Script', cursive;
+  position: relative;
+  bottom: -21px;
+  left: -536px;
+}
   
-  /* Post title styles */
-  .post-title {
-    text-align: center;
-    margin: 10px;
-  }
-  
-  /* Post author styles */
-  .post-author {
-    font-weight: bold;
-   margin-left: 21px;
-   margin-top: 10px;
-  }
-  .post-text{
-    margin: 21px;
-  }
-  
-  /* Edit button styles */
-  .edit-btn {
-    position: relative;
-    top: -26px;
-    left: 33;
-    color: white;
-    background-color: red;
-    padding: 5px 10px;
-    border: none;
-    border-radius: 3px;
-    top: 133;
-    left: 1400px;
-    margin-top: 2px;
-  }
-  
-  /* Save button styles */
-  .save-btn {
-    display: none;
-    position: relative;
-    top: -26px;
-    left: 33;
-    color: white;
-    background-color: red;
-    padding: 5px 10px;
-    border: none;
-    border-radius: 3px;
-    top: 133;
-    left: 1400px;
-    margin-top: 2px;
-  }
-  
-  /* Like button styles */
-  .like-btn {
-    display: flex;
-    align-items: center;
-    color: white;
-    background-color: red;
-    padding: 5px 10px;
-    border: none;
-    border-radius: 3px;
-    margin-left: 21px;
-  }
-  .like-statement{
-    margin: 21px;
-  }
-  
-  /* Comment section styles */
-  .comments-section {
-    background-color: #eee;
-    padding: 10px;
-    margin: 10px;
-  }
-  
-  /* Comment input styles */
-  .comment-input {
-    margin-bottom: 10px;
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    margin-left: 21px;
-  }
-  
-  /* Comment button styles */
-  .comment-btn {
-    display: inline-block;
-    color: white;
-    background-color: red;
-    padding: 5px 10px;
-    border: none;
-    border-radius: 3px;
-  }
+
   header {
-    background-color:  #ffeedd;
+    background-color:white;
     padding: 5px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   }
-  .container img {
-    height: 80px;
-    width: 100px;
-  }
+
   
   .container {
     padding: 10px 8%;
@@ -154,7 +82,8 @@ body {
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 400px;
+    width: 800px;
+height: 400px;
   }
   
   .modal-content h2 {
@@ -171,7 +100,7 @@ body {
   .modal-content input,
   .modal-content textarea {
     display: block;
-    width: 100%;
+    width: 90%;
     margin-bottom: 10px;
     padding: 10px;
     border-radius: 4px;
@@ -205,4 +134,86 @@ body {
     margin-bottom: 10px;
     display: none;
   }
+  .blogTite {
+    font-size: 150%;
+    font-family: 'Abel', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+.Author {
+    padding: 0px 0px 0px 10px;
+    font-family: 'Niconne', cursive;
+    font-size: 30px;
+    display: flex;
+	justify-content: space-between;
+}
+#edit
+{
+    display: flex;
+	justify-content: space-around;
+	text-decoration: none;
+	color: white;
+	font-family: serif;
+	font-size: 19px;
+	border: 1px solid pink;
+	height: 30px;
+	width: 75px;
+	background-color: deeppink;
+	text-align: center;
+	padding-top: 6px;
+}
+.desc
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.blogContent
+{
+padding-left: 30px;
+padding-right: 30px;
+}
+#commentBox button
+{
+	height: 35px;
+	width: 95px;
+	margin-top: 5px;
+	background-color: deeppink;
+	border: 0px;
+	color: white;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+#myBtn13
+{
+  font-size: 15px;
+  font-weight: 500;
+  border: none;
+  color: blue;
+  background-color: white;
+  cursor: pointer;
+}
+ #titleArea
+{
+    display: none;
+    font-family: 'Abel', sans-serif;
+    font-weight: bold;
+    border:1px solid pink;
+    width: 247px;
+    font-size: 23.5px
+    
+}
+textarea
+{
+    border-color: pink; 
+    font-size: 100%;
+    font-family: 'Abel', sans-serif;
+}
+#textarea
+{
+    border-color: pink; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 100%;
+}
+
+
+
   

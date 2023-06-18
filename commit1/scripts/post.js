@@ -1,85 +1,64 @@
+var like=0;
+var flag=0;
+function changeText()
+{
+if(flag==0)
+{
+     var x=document.getElementById("temp").innerHTML;
+    var title=document.getElementById('blogTitleNew').innerHTML;
+    document.getElementById('blogTitleNew').style.display="none";
+    document.getElementById('titleArea').value=title;
+    document.getElementById('titleArea').style.display="block";
+       document.getElementById("text").innerHTML='Save';
+    document.getElementById("text2").innerHTML=x;
+    // ------------------------------------------------------------now for description by ashish-------------------------------
+    var desc=document.getElementById('desc1').innerHTML;
+    document.getElementById('textarea').value=desc;
+    document.getElementById('desc1').style.display="none";
+    document.getElementById('textarea').style.display="block";
+    document.getElementById("textarea").style.width="95%";
+    document.getElementById("textarea").style.height="260px";
 
-
-// Get the Edit and Save buttons
-const editBtn = document.querySelector('.edit-btn');
-const saveBtn = document.querySelector('.save-btn');
-
-// Get the Post Title and Post Text elements
-const postTitle = document.querySelector('.post-title');
-const postText = document.querySelector('.post-text');
-const authName = document.querySelector('.post-author')
-
-// Add event listener to Edit button
-editBtn.addEventListener('click', () => {
-  // Make the post title and post text editable
-  postTitle.contentEditable = true;
-  postText.contentEditable = true;
-  authName.contentEditable = true;
-
-
-  // Add pink-colored border around the editable elements
-  postTitle.style.border = '1px solid pink';
-  postText.style.border = '1px solid pink';
-  authName.style.border = '1px solid pink';
-
-
-  // Show the Save button and hide the Edit button
-  saveBtn.style.display = 'inline-block';
-  editBtn.style.display = 'none';
-});
-
-// Add event listener to Save button
-saveBtn.addEventListener('click', () => {
-  // Make the post title and post text non-editable
-  postTitle.contentEditable = false;
-  postText.contentEditable = false;
-  authName.contentEditable = false;
-
-  // Remove the pink-colored border
-  postTitle.style.border = 'none';
-  postText.style.border = 'none';
-  authName.style.border = 'none';
-
-  // Show the Edit button and hide the Save button
-  editBtn.style.display = 'inline-block';
-  saveBtn.style.display = 'none';
-});
-
-// Get the Like button, Like statement, and initial like count
-const likeBtn = document.querySelector('.like-btn');
-const likeStatement = document.querySelector('.like-statement');
-let likeCount = 0;
-
-// Add event listener to Like button
-likeBtn.addEventListener('click', () => {
-  likeCount++;
-
-  if (likeCount === 1) {
-    likeStatement.textContent = '1 person likes this!';
-  } else {
-    likeStatement.textContent = `${likeCount} people like this!`;
-  }
-
-  // Change the Like button text to "Liked!"
-  likeBtn.textContent = 'Liked!';
-});
-
-// Get the Comment input and Comment section
-const commentInput = document.querySelector('.comment-input');
-const commentsSection = document.querySelector('.comments-section');
-
-// Add event listener to Comment button
-const commentBtn = document.querySelector('.comment-btn');
-commentBtn.addEventListener('click', () => {
-  const commentText = commentInput.value;
-  if (commentText !== '') {
-    const commentElement = document.createElement('div');
-    commentElement.classList.add('comment');
-    commentElement.textContent = commentText;
-    commentsSection.insertBefore(commentElement, commentsSection.firstChild);
-    commentInput.value = '';
-  }
-});
+    flag=1;
+}
+else
+{
+    var d=document.getElementById("temp2").innerHTML;
+    document.getElementById("text").innerHTML='Edit';
+    document.getElementById("text2").innerHTML=d;
+    var title1=document.getElementById('titleArea').value;
+    document.getElementById('blogTitleNew').innerHTML=title1;
+    document.getElementById('titleArea').style.display="none";
+    document.getElementById('blogTitleNew').style.display="block";
+    var desc111=document.getElementById('textarea').value;
+    document.getElementById('desc1').innerHTML=desc111;
+    document.getElementById('desc1').style.display="block";
+    document.getElementById('textarea').style.display="none";
+    flag=0;
+}
+}
+function liker1()
+{
+    like++;
+document.getElementsByClassName('likeText')[0].innerHTML="Liked!";
+if(like==1)
+{
+    document.getElementById('like6').innerHTML=like+" person likes this!";
+}
+else
+{
+    document.getElementById('like6').innerHTML=like+" people have liked this!";
+}
+document.getElementById('commentBox').style.display="block";
+}
+function cmnt()
+{
+   
+    var p=document.getElementById('commentArea').style.display="block";
+    var e=document.getElementById('commentArea').innerHTML;
+    var data=document.getElementById('cmntText').value;
+    document.getElementById('commentArea').innerHTML="<p style='background-color:white; margin:10px; padding-top:11px;height:35px;'>"+data+"</p>"+e;
+}
  // modal
  const signupModal = document.getElementById("signup-modal");
  const signinModal = document.getElementById("signin-modal");
